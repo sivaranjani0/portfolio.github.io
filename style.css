@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    position: sticky;
+    top: 0;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+    
+}
+.navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: rgba(220, 133, 19, 0.438);
+    color:black;
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.541);
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('https://tse4.mm.bing.net/th?id=OIP.h5woKRj4elNp4lNzEFE5_QHaFj&pid=Api&P=0&h=180')no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+   /* border: 1px solid whitesmoke;*/
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+.heading{
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+.btn{
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+    outline: none;
+    transition: .6s ease;
+
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+    color:black;
+    box-shadow: 0 0 5px rgba(238, 174, 12, 0.918),0 0 10px rgba(218, 165, 32, 0.863),0 0 15px rgba(218, 165, 32, 0.872);
+    font-weight: bold;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+    font-size: 150%;
+    background-color: rgba(26, 125, 212, 0.573);
+    
+}
+
+#pic{
+    display: flex;
+}
+#pic img{
+    width: 575px;
+    height: 400px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+#project{
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    color: white;
+    align-items: center;
+    padding: 20px;
+    font-size: 50px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.gallery img{
+    width: 360px;
+    height: 240px;
+    margin: 10px;
+}
+#Skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    padding: 20px;
+    background-color: rgba(255, 140, 0, 0.719);
+}
+.row{
+    display: flex;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    border: 1px solid black;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to top,rgba(255, 0, 0, 0.84) 50%,whitesmoke 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+}
+.box:hover{
+    background-position: left bottom;
+    color: whitesmoke;
+    border: none;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.854);
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 50px;
+    box-sizing: border-box;
+    background-color:black;
+    color:rgba(16, 217, 5, 0.76);
+    padding: 20px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+.input{
+    padding: 12px;
+    margin: 15px;
+    width:75%;
+    border: none;
+    outline: none;
+}
+#msg{
+    width: 40%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+}
+#send{
+    padding: 10px;
+    width: 45%;
+    margin: 40px;
+    border: none;
+    outline: none;
+}
+#send:hover{
+    cursor:pointer;
+    box-shadow: 0 0 10px white;
+}
